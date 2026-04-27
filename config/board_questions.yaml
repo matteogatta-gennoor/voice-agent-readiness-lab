@@ -1,0 +1,14 @@
+general:
+  - What decisions is the voice agent allowed to make?
+  - Who is accountable when the agent gives wrong information?
+  - What is the fallback when confidence drops?
+  - Are conversations logged, auditable, and explainable?
+  - What customer experience threshold justifies scaling?
+regulated:
+  - Which regulatory obligations apply to this call type?
+  - What evidence will prove that consent, disclosure, and escalation rules were followed?
+  - Who can suspend the agent if compliance exceptions rise?
+autonomy:
+  - Which actions require human approval before execution?
+  - What financial, legal, or customer-impact limits cap the agent's authority?
+  - How will exceptions be reviewed before expanding scope?

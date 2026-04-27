@@ -1,0 +1,26 @@
+company_sector: retail
+use_case: Multilingual retail customer support agent
+customer_impact: low
+languages:
+  - English
+  - French
+  - German
+  - Italian
+agent_type: voice
+autonomy_level: information_only
+data_access:
+  - CRM
+  - ticketing system
+  - knowledge base
+customer_authentication: basic
+human_handover: clear
+regulated_context: false
+call_recording: true
+consent_capture: explicit
+fraud_risk: low
+qa_monitoring: sampled
+latency_target_ms: 1300
+target_kpis:
+  - containment rate
+  - CSAT
+  - language-specific resolution rate

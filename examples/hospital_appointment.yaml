@@ -1,0 +1,24 @@
+company_sector: healthcare
+use_case: Outbound appointment confirmation for hospital patients
+customer_impact: medium
+languages:
+  - English
+  - Spanish
+agent_type: voice
+autonomy_level: guided_resolution
+data_access:
+  - CRM
+  - scheduling system
+  - knowledge base
+customer_authentication: basic
+human_handover: clear
+regulated_context: true
+call_recording: true
+consent_capture: explicit
+fraud_risk: low
+qa_monitoring: continuous
+latency_target_ms: 1200
+target_kpis:
+  - appointment confirmation rate
+  - no-show reduction
+  - escalation rate

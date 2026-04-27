@@ -1,0 +1,25 @@
+company_sector: telecom
+use_case: Inbound billing support agent for telecom customers
+customer_impact: medium
+languages:
+  - Dutch
+  - French
+  - English
+agent_type: voice
+autonomy_level: guided_resolution
+data_access:
+  - CRM
+  - billing system
+  - knowledge base
+customer_authentication: not_defined
+human_handover: partial
+regulated_context: true
+call_recording: true
+consent_capture: implicit
+fraud_risk: medium
+qa_monitoring: sampled
+latency_target_ms: 1600
+target_kpis:
+  - cost per call
+  - containment rate
+  - escalation rate

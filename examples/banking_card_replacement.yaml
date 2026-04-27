@@ -1,0 +1,23 @@
+company_sector: banking
+use_case: Voice AI agent for banking card replacement
+customer_impact: high
+languages:
+  - English
+agent_type: voice
+autonomy_level: transactional
+data_access:
+  - CRM
+  - core banking
+  - knowledge base
+customer_authentication: strong
+human_handover: clear
+regulated_context: true
+call_recording: true
+consent_capture: explicit
+fraud_risk: high
+qa_monitoring: continuous
+latency_target_ms: 1100
+target_kpis:
+  - successful replacement rate
+  - fraud exception rate
+  - customer effort score

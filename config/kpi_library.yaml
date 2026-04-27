@@ -1,0 +1,21 @@
+core:
+  - Containment rate
+  - First contact resolution
+  - Customer satisfaction
+  - Average latency
+  - Task completion rate
+  - Hallucination or incorrect-answer rate
+compliance:
+  - Consent capture rate
+  - Required disclosure completion rate
+  - Compliance exception rate
+  - Audit sample pass rate
+handover:
+  - Escalation rate
+  - Correct escalation rate
+  - Human takeover time
+  - Context transfer completeness
+language:
+  - Language-specific intent accuracy
+  - Language-specific CSAT
+  - Accent and dialect failure rate

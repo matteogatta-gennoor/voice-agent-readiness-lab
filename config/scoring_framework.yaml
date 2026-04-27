@@ -1,0 +1,106 @@
+dimensions:
+  product_scope:
+    weight: 0.15
+    base: 55
+    checks:
+      - field: customer_impact
+        equals: low
+        delta: 25
+      - field: customer_impact
+        equals: medium
+        delta: 10
+      - field: customer_impact
+        equals: high
+        delta: -10
+      - field: autonomy_level
+        equals: guided_resolution
+        delta: 12
+      - field: autonomy_level
+        equals: decisioning
+        delta: -20
+  integration:
+    weight: 0.18
+    base: 45
+    contains_checks:
+      - field: data_access
+        contains_any: [CRM]
+        delta: 15
+      - field: data_access
+        contains_any: [ticketing system, helpdesk]
+        delta: 10
+      - field: data_access
+        contains_any: [knowledge base]
+        delta: 12
+      - field: data_access
+        contains_any: [billing system, scheduling system, core banking]
+        delta: 15
+  compliance:
+    weight: 0.17
+    base: 60
+    checks:
+      - field: consent_capture
+        equals: explicit
+        delta: 18
+      - field: consent_capture
+        equals: implicit
+        delta: 4
+      - field: consent_capture
+        equals: not_defined
+        delta: -22
+      - field: call_recording
+        equals: true
+        delta: 8
+  customer_experience:
+    weight: 0.15
+    base: 62
+    checks:
+      - field: human_handover
+        equals: clear
+        delta: 18
+      - field: human_handover
+        equals: partial
+        delta: -8
+      - field: human_handover
+        equals: none
+        delta: -24
+  operations:
+    weight: 0.15
+    base: 50
+    checks:
+      - field: qa_monitoring
+        equals: continuous
+        delta: 25
+      - field: qa_monitoring
+        equals: sampled
+        delta: 12
+      - field: qa_monitoring
+        equals: not_defined
+        delta: -18
+  governance:
+    weight: 0.12
+    base: 55
+    checks:
+      - field: fraud_risk
+        equals: low
+        delta: 15
+      - field: fraud_risk
+        equals: medium
+        delta: 0
+      - field: fraud_risk
+        equals: high
+        delta: -20
+  language_quality:
+    weight: 0.08
+    base: 75
+    checks:
+      - field: agent_type
+        equals: voice
+        delta: -5
+penalties:
+  regulated_context: 4
+  undefined_authentication: 10
+  weak_handover: 7
+  high_autonomy: 8
+  high_fraud_risk: 8
+  multilingual_complexity: 5
+  latency_above_threshold: 5

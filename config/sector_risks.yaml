@@ -1,0 +1,24 @@
+telecom:
+  risks:
+    - Billing explanations can become disputes, refunds, or complaint handling.
+    - Account access and SIM-related flows can create fraud and account-takeover exposure.
+healthcare:
+  risks:
+    - Appointment and triage language can be interpreted as medical advice.
+    - Patient identity, consent, and protected health information need strict handling.
+banking:
+  risks:
+    - Card, payment, and account flows create financial-loss and fraud exposure.
+    - Regulated disclosures and authentication failures can create supervisory risk.
+retail:
+  risks:
+    - Returns, refunds, and promotions can create inconsistent customer outcomes.
+    - Multilingual support can degrade brand experience if quality is uneven.
+insurance:
+  risks:
+    - Claims conversations can drift into coverage interpretation or regulated advice.
+    - Vulnerable-customer and complaint handling require clear escalation.
+utilities:
+  risks:
+    - Payment support and disconnection topics can create customer harm.
+    - Emergency or outage calls require precise routing and escalation.
