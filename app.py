@@ -67,7 +67,7 @@ with st.sidebar:
     st.divider()
     st.markdown("The MVP is deterministic and YAML-driven. No LLM API key is required.")
 
-with st.form("assessment_form"):
+with st.container():
     left, right = st.columns(2)
 
     with left:
@@ -151,9 +151,6 @@ with st.form("assessment_form"):
             ],
             default=loaded["target_kpis"],
         )
-
-    submitted = st.form_submit_button("Assess Production Readiness", type="primary")
-
 data = {
     "company_sector": company_sector,
     "use_case": use_case_text,
