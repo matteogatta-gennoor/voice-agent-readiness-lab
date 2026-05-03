@@ -35,6 +35,23 @@ def example_options() -> dict[str, str]:
     }
 
 
+def kpi_options(defaults: list[str]) -> list[str]:
+    options = [
+        "cost per call",
+        "containment rate",
+        "CSAT",
+        "escalation rate",
+        "first call resolution",
+        "appointment confirmation rate",
+        "no-show reduction",
+        "successful replacement rate",
+        "fraud exception rate",
+        "customer effort score",
+        "language-specific resolution rate",
+    ]
+    return sorted(set(options + defaults))
+
+
 def build_use_case(data: dict) -> UseCase:
     return UseCase(
         company_sector=data["company_sector"],
@@ -139,16 +156,7 @@ with st.container():
         )
         target_kpis = st.multiselect(
             "Target KPIs",
-            [
-                "cost per call",
-                "containment rate",
-                "CSAT",
-                "escalation rate",
-                "first call resolution",
-                "appointment confirmation rate",
-                "fraud exception rate",
-                "customer effort score",
-            ],
+            kpi_options(loaded["target_kpis"]),
             default=loaded["target_kpis"],
         )
 data = {
