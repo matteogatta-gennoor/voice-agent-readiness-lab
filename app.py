@@ -75,6 +75,11 @@ def build_use_case(data: dict) -> UseCase:
 
 st.title("Voice Agent Readiness Lab")
 st.caption("Assess whether an enterprise Voice AI use case is ready for production.")
+st.warning(
+    "Do not enter confidential customer data, personal data, account numbers, "
+    "or other sensitive information. This tool supports readiness assessment "
+    "and does not replace legal, compliance, security, or professional review."
+)
 
 with st.sidebar:
     st.header("Load Example")

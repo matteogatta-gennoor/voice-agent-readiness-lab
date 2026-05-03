@@ -6,6 +6,10 @@ Voice AI demos beautifully. Production is a different animal: latency, escalatio
 
 Voice Agent Readiness Lab is a practical, config-driven toolkit for assessing whether a Voice AI use case is ready to operate safely, reliably, and commercially in front of customers.
 
+## Disclaimer
+
+Do not enter confidential customer data, personal data, account numbers, or other sensitive information. This tool supports production-readiness assessment and does not replace legal, compliance, security, or professional review.
+
 ## Screenshots
 
 | App input flow | Example report output |
