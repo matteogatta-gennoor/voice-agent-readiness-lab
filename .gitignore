@@ -6,4 +6,6 @@ __pycache__/
 .streamlit/secrets.toml
 outputs/*.md
 outputs/*.pdf
+!outputs/example_telecom_billing_report.md
+assets/assessment-screenshot.png
 .DS_Store
